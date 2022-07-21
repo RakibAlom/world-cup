@@ -1,5 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  font-family: 'Poppins', sans-serif;
+}
+div{
+  padding: 0;
+  margin: 0;
+}
+/* ========== ROOT CSS STYLE ========== */
+.container{
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+}
+ul li{
+  list-style: none;
+}
+/* ========== ROOT CSS STYLE ========== */
+
+/* ========== HEADER AREA START ========== */
+.banner-area{
+  width: 100%;
+  background-color: #161616;
+  border-radius: 10px;
+  display: flex;
+}
+.banner-info, .banner-image{
+  width: 50%;
+}
+.banner-info{
+  color: #fff;
+  margin: auto 0;
+  padding: 40px 0;
+  padding-left: 100px;
+}
+.banner-title{
+  font-size: 4.4em;
+  line-height: 80px;
+}
+.banner-slogan{
+  padding: 10px 0 30px;
+  line-height: 26px;
+}
+.banner-image{
+  font-size: 1em;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: -7px;
+}
+.banner-image img{
+  width: 100%;
+}
+.banner-button{
+  text-decoration: none;
+  color: #fff;
+  background-color: #DD0000;
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: 1px solid #DD0000;
+  /* animation: floating 4s ease-in-out 1s linear alternate; */
+  
+}
+.banner-button i{
+  padding-left: 10px;
+}
+.banner-button:hover{
+  transition: 0.3s;
+  background-color: transparent;
+}
+/* @keyframes floating{
+  from{
+    font-size: 15px;
+    background-color: #DD0000;
+  }
+  to{
+    background-color: #000000;
+  }
+} */
+/* ========== HEADER AREA END ========== */
+
+/* ========== MAIN CONTENT START ========== */
+.main-content{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 24px;
+}
+/* ========== MAIN CONTENT END ========== */
+
+/* ========== SIDEBAR AREA START ========== */
+.navbar{
+  width: 312px;
+  padding: 30px;
+  background-color: #161616;
+  border-radius: 10px;
+}
+.navbar .nav-items{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.navbar  .nav-link{
+  text-decoration: none;
+  color: #161616;
+  background-color: #fff;
+  padding: 16px 20px;
+  display: block;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.navbar  .nav-link.active{
+  background-color: #DD0000;
+  color: #fff;
+}
+/* ========== SIDEBAR AREA START ========== */
+
+/* ========== BLOGS AREA START ========== */
+.blogs .blog-items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.single-blog{
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+}
+.blog-thumbnail img{
+  width: 100%;
+}
+.single-blog-info{
+  padding: 15px 10px;
+}
+.single-blog-info .category{
+  text-decoration: none;
+  border: 1px solid #161616;
+  padding: 4px 16px;
+  font-weight: 500;
+  color: #161616;
+  border-radius: 5px;
+  transition: 00.3s;
+}
+.single-blog-info .category:hover{
+  background-color: #161616;
+  color: #fff;
+}
+.blog-title{
+  font-size: 17px;
+  font-weight: 600;
+  padding: 20px 0;
+  cursor: pointer;
+}
+.blog-extra-info{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.blog-extra-info span{
+  padding-right: 30px;
+}
+/* ========== BLOGS AREA END ========== */
+
+/* ========== FOOTER AREA START ========== */
+.footer{
+  background-color: #161616;
+  padding: 20px;
+  text-align: center;
+}
+.footer-logo h3{
+  font-size: 40px;
+  font-weight: 600;
+  padding: 40px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-menu{
+  padding: 50px 20px 40px;
+}
+.footer-navbar{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.footer-navbar .nav-link{
+  text-decoration: none;
+  color: #B9B9B9;
+  padding: 16px 20px;
+}
+.footer-navbar .nav-link:hover{
+  color: #fff;
+}
+/* ========== FOOTER AREA END ========== */
+
+/* ========== MATCHES AREA END ========== */
+.matches .match-items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.single-match{
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+  padding: 50px 30px;
+  text-align: center;
+}
+.single-match .match-flags{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.match-flags .vs{
+  font-weight: 700;
+}
+.match-info .match-title{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 20px 0 10px;
+  color: #161616;
+}
+.match-info .match-time{
+  color: #4D4D4D;
+}
+/* ========== MATCHES AREA END ========== */
